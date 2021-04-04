@@ -1,0 +1,18 @@
+<div class="form-group">
+  <label for="file">Carga una imagen</label>
+  <br />
+  <input
+    type="file"
+    accept=".png, .jpg, .jpeg"
+    id="fileInput"
+    name="file"
+    (change)="handleFileInput($event)"
+  /> 
+</div>
+<br>
+<div>
+  <canvas #canvasInput id="canvasInput" class="canvas" ></canvas>
+  <br>
+  <span>{{ result}}</span>
+</div>
+
