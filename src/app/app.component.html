@@ -1,18 +1,22 @@
-<div class="form-group">
-  <label for="file">Carga una imagen</label>
-  <br />
-  <input
-    type="file"
-    accept=".png, .jpg, .jpeg"
-    id="fileInput"
-    name="file"
-    (change)="handleFileInput($event)"
-  /> 
-</div>
-<br>
-<div>
-  <canvas #canvasInput id="canvasInput" class="canvas" ></canvas>
+<div class="container bg-image" style=" background-image: url('https://www.enjpg.com/img/2020/light-blue-background-4.jpg');
+height: 100vh;">
+  <div class="form-group">
+    <h1 for="file">Carga una imagen</h1>
+    <br />
+    <input
+      class="btn btn-secondary"
+      type="file"
+      accept=".png, .jpg, .jpeg"
+      id="fileInput"
+      name="file"
+      (change)="handleFileInput($event)"
+    /> 
+  </div>
   <br>
-  <span>{{ result}}</span>
+  <div>
+    <canvas #canvasInput id="canvasInput" class="canvas" ></canvas>
+    <br>
+    <h3 class="fw-bolder">{{ result}}</h3>
+  </div>
 </div>
 

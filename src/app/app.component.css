@@ -2,8 +2,6 @@ div {
   text-align: center;
 }
 
-
-/* .canvas {
-  width: 400px;
-  height: 320px;
-} */
+canvas{
+  border-radius: 10px; 
+}
